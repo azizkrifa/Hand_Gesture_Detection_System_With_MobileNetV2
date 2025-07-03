@@ -1,5 +1,5 @@
 # 🖐️ Hand Gesture Detection System with MobileNetV2
-This project recognizes dynamic hand gestures from sequences of frames using a pretrained MobileNetV2 and LSTM. It uses the hand gesture dataset from Kaggle by marusagar for training and evaluation.
+This project recognizes dynamic hand gestures from sequences of frames using a pretrained **MobileNetV2** and LSTM. It uses the hand gesture dataset from Kaggle by **marusagar** for training and evaluation.
 
 ----
 
