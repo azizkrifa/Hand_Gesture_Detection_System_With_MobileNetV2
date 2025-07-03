@@ -23,7 +23,6 @@ pip install -r requirements.txt
 
   - `Source`: Original dataset ( **763 sequences** ) downloaded from Kaggle via **kagglehub**: [marusagar/hand-gesture-detection-system](https://www.kaggle.com/code/marusagar/hand-gesture-recognition-system)
   - `Classes`: 5 hand gestures (`Left_Swipe`, `Right_Swipe`, `Stop`, `Thumbs_Down`, `Thumbs_Up`).
-  - `Structure`: Each gesture class contains subfolders with sequences of .png frames (30 frames per sequence).
   - `Data Split`:
       - `train(643)`: Majority of sequences for training.
       - `val(100)`: Subset of sequences for validation.
@@ -31,6 +30,7 @@ pip install -r requirements.txt
   - `Preprocessing`: Frames are resized to 224×224, converted to RGB, and normalized to [0, 1].
 
 ### 📚 Directory structure: 
+Each gesture class contains subfolders with sequences of .png frames (30 frames per sequence).
 
 ```bash
 Dataset/
