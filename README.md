@@ -1,1 +1,1 @@
-# Hand_Gesture_Detection_System_With_MobileNetV2
+# 🖐️ Hand Gesture Detection System with MobileNetV2
