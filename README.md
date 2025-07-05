@@ -78,15 +78,21 @@ The classes are relatively `balanced`, with counts ranging from `119` to `133` s
 
 - Originally, each training sequence consists of `30 frames` :
   
-![Sans titre](https://github.com/user-attachments/assets/bce6a890-20f3-4801-b509-89a36b2d1424)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bce6a890-20f3-4801-b509-89a36b2d1424" width="60%" height="60">
+</p>
+
 
 - To reduce `computation and speed up training`, we downsample each sequence by selecting every `2nd frame` (i.e., 15 frames per sample) :
-  
+
+  <p align="center">
+  <img src="https://github.com/user-attachments/assets/468927c7-dcb4-4e25-b77a-3dd16e1d8133" width="60%" height="60">
+</p>
 
 
   
 
-![image](https://github.com/user-attachments/assets/9ddb32f8-f918-4e82-9ce9-8a3e20fd0bda)
+
 
 
 
