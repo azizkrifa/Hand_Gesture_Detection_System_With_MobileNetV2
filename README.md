@@ -85,7 +85,7 @@ The classes are relatively `balanced`, with counts ranging from `119` to `133` s
 
 - To reduce `computation and speed up training`, we downsample each sequence by selecting every `2nd frame` (i.e., 15 frames per sample) :
 
-  <p align="center">
+<p align="center">
   <img src="https://github.com/user-attachments/assets/468927c7-dcb4-4e25-b77a-3dd16e1d8133" width="60%" height="60">
 </p>
 
