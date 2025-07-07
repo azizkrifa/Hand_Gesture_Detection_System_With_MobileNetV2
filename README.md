@@ -69,7 +69,7 @@ Dataset/
 ### 📊 Class Distribution(Train Set) :
   <p align="center">
   <img src="https://github.com/user-attachments/assets/b65883b2-c86a-45d3-94d9-dbc797cacfb6"
- width="60%" height="300px" />
+ width="70%" height="300px" />
   </p>
   
 The classes are relatively `balanced`, with counts ranging from `119` to `133` samples each. This balance helps ensure that the model receives sufficient examples from each gesture category during training, which can contribute to `better overall performance` and generalization across different hand gestures.
