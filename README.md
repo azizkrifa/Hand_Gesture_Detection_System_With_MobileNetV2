@@ -3,6 +3,25 @@ This project recognizes `dynamic hand gestures` from `sequences of frames` using
 
 ----
 
+## 🧠 Overview
+
+  - Downloaded the Hand Gesture dataset from `KaggleHub` and organized it into `train`, `validation`, and `test` sets.
+
+  - Visualized random `gesture sequences` and `class distributions` to ensure `balanced` data.
+
+  - Preprocessed frames by `resizing`, `normalizing`, and `structuring` them into sequences for `temporal` modeling.
+
+  - Built a `hybrid` deep learning model combining `MobileNetV2 (CNN)` for spatial feature extraction and `Bidirectional GRU` for temporal sequence learning.
+
+  - Trained the model with `early stopping`, `learning rate reduction`, `model checkpointing`, and `CSV logging`.
+
+  - Visualized `training vs. validation` metrics `(accuracy/loss)` to monitor model convergence.
+
+  - Evaluated performance on the test set, reporting `loss`, `accuracy`, `classification report`, and `confusion matrix`.
+
+
+----
+
 ## 🚀 How to Run
 
 #### 📥 1. Clone the Repository
