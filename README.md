@@ -137,9 +137,9 @@ The classes are relatively `balanced`, with counts ranging from `119` to `133` s
 
 - **Epochs**: 40
 
-- **Batch size**: 4 sequences per step (each sequence = 15 frames).
+- **Batch size**: 4 sequences per step (`each sequence = 15 frames`).
 
-- **Training data**: Preprocessed image sequences (15-frame inputs), optionally augmented.
+- **Training data**: Preprocessed image sequences (`15-frame inputs`), optionally augmented.
 
 - **Validation data**: Clean validation set (no augmentation).
 
