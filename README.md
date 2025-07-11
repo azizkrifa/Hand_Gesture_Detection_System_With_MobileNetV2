@@ -108,6 +108,51 @@ The classes are relatively `balanced`, with counts ranging from `119` to `133` s
   <img src="https://github.com/user-attachments/assets/468927c7-dcb4-4e25-b77a-3dd16e1d8133" >
 </p>
 
+-----
+## ⚙️ Model Setup
+
+- **Base model**: MobileNetV2 (pretrained on ImageNet, `include_top=False`, fine-tuned).
+
+- **Input**: Sequence of `15 frames`, each of size 224×224×3 (**RGB**).
+
+- **Architecture**:
+
+  - `TimeDistributed(MobileNetV2)`
+  - `TimeDistributed(BatchNormalization)`
+  - `TimeDistributed(GlobalAveragePooling2D)`
+  - **Bidirectional(GRU)**(128)
+  - **Dropout**(0.25)
+  - **Dense**(128, **ReLU**) + **Dropout**(0.25)
+  - **Dense**(5, **Softmax**)
+
+- **Optimizer**: Adam (`learning rate = 1e-4`)
+
+- **Loss function**: Sparse Categorical Crossentropy
+
+- **Metrics**: Accuracy
+
+-----
+
+## 🏋️‍♂️ Training Details
+
+- **Epochs**: 40
+
+- **Batch size**: 4 sequences per step (each sequence = 15 frames).
+
+- **Training data**: Preprocessed image sequences (15-frame inputs), optionally augmented.
+
+- **Validation data**: Clean validation set (no augmentation).
+
+- **Callbacks**:
+
+  - **Checkpoints**: Best model saved based on validation accuracy (`ModelCheckpoint`).
+  - **Early stopping**: Stops training if validation loss does not improve for 10 consecutive epochs (`EarlyStopping` with `restore_best_weights=True`).
+  - **ReduceLROnPlateau**: Reduces learning rate by factor of 0.5 if validation loss stagnates for 3 epochs (minimum LR = 1e-7).
+  - **CSVLogger**: Saves training history to CSV (`training_log.csv`).
+
+
+
+
 
   
 
