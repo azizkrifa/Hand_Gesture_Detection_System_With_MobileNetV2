@@ -36,6 +36,29 @@ cd Hand_Gesture_Detection_System_With_MobileNetV2
 pip install -r requirements.txt
 ```
 
+### 🧪 3. Run the Pipeline Step-by-Step
+
+   ####  🧹 3.1: Data Preparation
+
+  Load and preprocess the dataset :
+
+   📄 Run: `data_preprocessing.ipynb`
+
+  ####  🧠 3.2: Train the Model
+
+  Train the model on the prepared dataset: 
+  
+   📄 Run: `Training.ipynb`
+    
+  #### 📊 3.3: Evaluate the Model
+
+  Evaluate model performance and visualize results: 
+  
+   📄 Run: `Evaluation.ipynb`
+     
+---
+
+
 ----
 
 ## 📁 Dataset
