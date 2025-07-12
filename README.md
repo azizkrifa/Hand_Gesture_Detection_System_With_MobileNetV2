@@ -56,10 +56,7 @@ pip install -r requirements.txt
   
    📄 Run: `Evaluation.ipynb`
      
----
-
-
-----
+-----
 
 ## 📁 Dataset
 
@@ -69,7 +66,7 @@ pip install -r requirements.txt
       - `train(643)`: Majority of sequences for training.
       - `val(100)`: Subset of sequences for validation.
       - `test(20)` :
-  - `Preprocessing`: Frames are resized to 224×224, converted to RGB, and normalized to [0, 1].
+  - `Preprocessing`: Frames are resized to `224×224`, converted to `RGB` and normalized to `[0, 1]`.
 
 ### 📚 Directory structure: 
 Each gesture class contains subfolders with sequences of .png frames (30 frames per sequence).
@@ -170,7 +167,7 @@ The classes are relatively `balanced`, with counts ranging from `119` to `133` s
 
   - **Checkpoints**: Best model saved based on validation accuracy (`ModelCheckpoint`).
   - **Early stopping**: Stops training if validation loss does not improve for 10 consecutive epochs (`EarlyStopping` with `restore_best_weights=True`).
-  - **ReduceLROnPlateau**: Reduces learning rate by factor of 0.5 if validation loss stagnates for 3 epochs (minimum LR = 1e-7).
+  - **ReduceLROnPlateau**: Reduces learning rate by `factor of 0.5` if validation loss stagnates for`3 epochs` (minimum LR = 1e-7).
   - **CSVLogger**: Saves training history to CSV (`training_log.csv`).
  
 -----
