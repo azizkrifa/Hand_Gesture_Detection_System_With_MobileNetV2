@@ -36,21 +36,21 @@ cd Hand_Gesture_Detection_System_With_MobileNetV2
 pip install -r requirements.txt
 ```
 
-### 🧪 3. Run the Pipeline Step-by-Step
+#### 🧪 3. Run the Pipeline Step-by-Step
 
-   ####  🧹 3.1: Data Preparation
+   #####  🧹 3.1: Data Preparation
 
   Load and preprocess the dataset :
 
    📄 Run: `data_preprocessing.ipynb`
 
-  ####  🧠 3.2: Train the Model
+  ##### 🧠 3.2: Train the Model
 
   Train the model on the prepared dataset: 
   
    📄 Run: `Training.ipynb`
     
-  #### 📊 3.3: Evaluate the Model
+  ##### 📊 3.3: Evaluate the Model
 
   Evaluate model performance and visualize results: 
   
@@ -172,6 +172,19 @@ The classes are relatively `balanced`, with counts ranging from `119` to `133` s
   - **Early stopping**: Stops training if validation loss does not improve for 10 consecutive epochs (`EarlyStopping` with `restore_best_weights=True`).
   - **ReduceLROnPlateau**: Reduces learning rate by factor of 0.5 if validation loss stagnates for 3 epochs (minimum LR = 1e-7).
   - **CSVLogger**: Saves training history to CSV (`training_log.csv`).
+ 
+-----
+
+## 📈 Training Curves
+
+Plots of **training** & **validation** (`accuracy / loss`) across **30** epochs :
+
+<img width="1388" height="490" alt="Sans titre" src="https://github.com/user-attachments/assets/587d8eba-8253-4f75-9c38-a341186276e3" />
+
+
+-  The training and validation curves show consistent improvement over epochs. The model achieves a validation accuracy of `~89%`, with decreasing loss and no major signs of overfitting — indicating good generalization to unseen data.
+
+---
 
 
 
