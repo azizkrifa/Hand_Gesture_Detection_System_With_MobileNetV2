@@ -28,6 +28,8 @@ This project recognizes `dynamic hand gestures` from `sequences of frames` using
 
 ```bash
 git clone https://github.com/azizkrifa/Hand_Gesture_Detection_System_With_MobileNetV2.git
+```
+```bash
 cd Hand_Gesture_Detection_System_With_MobileNetV2
 ```
 #### 📦 2. Install Dependencies
@@ -122,7 +124,7 @@ The classes are relatively `balanced`, with counts ranging from `119` to `133` s
 </p>
 
 
-- To reduce `computation and speed up training`, we downsample each sequence by selecting every `2nd frame` (i.e., 15 frames per sample) :
+- To reduce `computational cost` and `accelerate training`, we downsample each input sequence by selecting every `2nd frame`, resulting in `15 frames per sample`. This decision is based on `prior experiments` using 30-frame sequences, which showed `marginal performance gains` relative to the increased training time and memory consumption. Thus, 15 frames offered a more efficient trade-off between `accuracy` and `computational efficiency`:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/468927c7-dcb4-4e25-b77a-3dd16e1d8133" >
@@ -182,6 +184,46 @@ Plots of **training** & **validation** (`accuracy / loss`) across **30** epochs 
 -  The training and validation curves show consistent improvement over epochs. The model achieves a validation accuracy of `~89%`, with decreasing loss and no major signs of overfitting — indicating good generalization to unseen data.
 
 ---
+
+## 📊 Evaluation Results
+
+The test set consists of only `20 samples`. Although the model achieved a test accuracy of `90%`, such a small sample size limits the `reliability` and `generalizability` of the result. Therefore, we also present the `validation` set metrics, which are based on a `larger dataset` and provide a more stable and informative evaluation of the model’s performance.
+
+<div align="center">
+<table>
+  <tr>
+    <th>val set</th>
+    <th>test set</th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/a2d1114e-003f-4fbc-bf44-ba09d3b48dff" width="400px" height="300px" ></td>
+    <td><img src="https://github.com/user-attachments/assets/a06a0ed3-e100-4446-8473-87471894b5b2" width="400"  height="300px"></td>
+  </tr>
+</table>
+</div>
+
+➡️ The `Outputs` folder contains the `confusion matrix` for both the `validation` and `test` sets, along with the saved best model (`best_model.keras`).
+
+
+----
+
+
+## 🎯 Sample Predictions
+
+
+  <img width="500" height="400" alt="Sans titre" src="https://github.com/user-attachments/assets/a4c03611-49f7-4dc0-9880-6a3b417b5137" />
+  <img width="500" height="400" alt="Sans titre" src="https://github.com/user-attachments/assets/26e6a1d1-c984-4f44-8fbc-12fef89675d9" />
+  <img width="500" height="400" alt="Sans titre" src="https://github.com/user-attachments/assets/810e0bf8-fe3f-4735-8927-13d077cead66" />
+  <img width="500" height="400" alt="Sans titre" src="https://github.com/user-attachments/assets/c9284e6a-e5ee-4bde-9716-0c21252716bf" />
+  <img width="500" height="400" alt="Sans titre" src="https://github.com/user-attachments/assets/c683b44c-ce7f-4417-9a55-84a3566d1177" />
+  <img width="500" height="400" alt="Sans titre" src="https://github.com/user-attachments/assets/b5f492fb-0e2a-4b05-909e-385a69867389" />
+
+
+
+
+
+
+
 
 
 
