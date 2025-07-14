@@ -210,14 +210,14 @@ The test set consists of only `20 samples`. Although the model achieved a test a
 
 ## 🎯 Sample Predictions
 
-
+<div align="center">
   <img width="500" height="400" alt="Sans titre" src="https://github.com/user-attachments/assets/a4c03611-49f7-4dc0-9880-6a3b417b5137" />
   <img width="500" height="400" alt="Sans titre" src="https://github.com/user-attachments/assets/26e6a1d1-c984-4f44-8fbc-12fef89675d9" />
   <img width="500" height="400" alt="Sans titre" src="https://github.com/user-attachments/assets/810e0bf8-fe3f-4735-8927-13d077cead66" />
   <img width="500" height="400" alt="Sans titre" src="https://github.com/user-attachments/assets/c9284e6a-e5ee-4bde-9716-0c21252716bf" />
   <img width="500" height="400" alt="Sans titre" src="https://github.com/user-attachments/assets/c683b44c-ce7f-4417-9a55-84a3566d1177" />
   <img width="500" height="400" alt="Sans titre" src="https://github.com/user-attachments/assets/b5f492fb-0e2a-4b05-909e-385a69867389" />
-
+</div>
 
 
 
